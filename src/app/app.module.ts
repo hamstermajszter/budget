@@ -3,10 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { EnvelopeComponent } from './envelope/envelope.component';
+import { EnvelopeListComponent } from './envelope/envelope-list/envelope-list.component';
+import { EnvelopeItemComponent } from './envelope/envelope-list/envelope-item/envelope-item.component';
+import { ExpenseEditComponent } from './expense-list/expense-edit/expense-edit.component';
+import { ExpenseListComponent } from './expense-list/expense-list.component';
+import { EnvelopeDetailComponent } from './envelope/envelope-detail/envelope-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    EnvelopeComponent,
+    EnvelopeListComponent,
+    EnvelopeItemComponent,
+    ExpenseEditComponent,
+    ExpenseListComponent,
+    EnvelopeDetailComponent
   ],
   imports: [
     BrowserModule,
