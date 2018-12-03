@@ -1,1 +1,18 @@
-<app-envelope-item></app-envelope-item>
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success mb-4">New envelope</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <a href="#" class="row" *ngFor="let envelope of envelopes">
+            <div class="col-sm">
+                <h4 class="">{{ envelope.name }}</h4>
+            </div>
+            <div class="col-sm">
+                <p class="">{{ envelope.balance }}</p>
+            </div>
+        </a>
+        <app-envelope-item></app-envelope-item>
+    </div>
+</div>
