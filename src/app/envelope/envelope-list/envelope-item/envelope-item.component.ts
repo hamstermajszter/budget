@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+
+import { Envelope } from '@app/shared/model/envelope';
 
 @Component({
   selector: 'app-envelope-item',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./envelope-item.component.scss']
 })
 export class EnvelopeItemComponent implements OnInit {
+  @Input() envelope: Envelope;
+  @Output() envelopeSelected = new EventEmitter<void>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelected() {
+    this.envelopeSelected.emit();
   }
 
 }

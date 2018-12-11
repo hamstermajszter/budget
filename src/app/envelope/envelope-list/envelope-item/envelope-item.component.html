@@ -1,3 +1,6 @@
-<p>
-  envelope-item works!
-</p>
+<a href="#" class="list-group-item clearfix" (click)="onSelected()">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ envelope.name }}</h4>
+    <p class="list-group-item-text">{{ envelope.balance }}</p>
+  </div>
+</a>

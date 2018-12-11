@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-expense-edit></app-expense-edit>
+    <hr>
+    <ul class="list-group">
+      <a href="#" class="list-group-item" *ngFor="let expense of expenses">{{ expense.amount }}</a>
+    </ul>
+  </div>
+</div>
